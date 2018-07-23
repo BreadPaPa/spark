@@ -164,7 +164,7 @@ class DateType(AtomicType):
 
     __metaclass__ = DataTypeSingleton
 
-    EPOCH_ORDINAL = datetime.datetime(1970, 1, 1).toordinal()
+    EPOCH_ORDINAL = datetime.datetime(1900, 1, 1).toordinal()
 
     def needConversion(self):
         return True
